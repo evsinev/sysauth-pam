@@ -1,0 +1,23 @@
+[package]
+name = "sysauth-pam"
+version = "0.0.1"
+
+[lib]
+name = "pam_sysauth"
+crate-type = ["cdylib"]
+
+[dependencies]
+pam-bindings = "0.1.1"
+env_logger = "0.11.5"
+gethostname = "0.5.0"
+log = "0.4.22"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.133"
+serde_yaml = "0.9"
+ureq = "2.12.1"
+anyhow = "1.0"
+enum-display-derive = "0.1.1"
+libc = "0.2.169"
+auto-args = "0.3.1"
+humantime = "2.1.0"
+systemd-journal-logger = "2.2.0"
